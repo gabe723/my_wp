@@ -17,9 +17,7 @@
  *
  * @package WordPress
  */
-
-// wp-admin pw: G0otXxSmde#%3LPX9J
-
+/* wp pw: 0*VJr1e1gOn6(wDe$y */
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'gabe_portfolio');
@@ -28,7 +26,7 @@ define('DB_NAME', 'gabe_portfolio');
 define('DB_USER', 'gn_portfolio');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'KV3Pb9N4NcvcNBkM');
+define('DB_PASSWORD', '2d3gQi6j9C2de2QX');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -48,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+ define('AUTH_KEY',         'anf^oSmfuD-0|i,GY^{rj}fFyYm0?*`9JPb+|v|dCobZmHe+%Xb#q&SZ&qPU;{5<');
+ define('SECURE_AUTH_KEY',  '&RXfC`uk-[;u&cU.-r@-.~`Uga<6?+-gsI/DjbL)0,yu12;*/D.]7(0,ysZ.Rjw=');
+ define('LOGGED_IN_KEY',    'pf)7+Xo6AD+R?%3Xu~K4?=6P|,V=W&T+N2W|-*2&rTuH^65_d/!7]F7G_,I|&/:p');
+ define('NONCE_KEY',        'H)Q,AH++T[iAq+~:Ph@|YuI2#-X0+ Ed59@dEYkp&|*>V6p@4*[`6bljG;,zIISW');
+ define('AUTH_SALT',        'EUXDwxWhsZVbv^oSTNv*6.5D3I>mpmM[dF]g|VoW1T/FOlU7pzgqF[ @m1T{^m<X');
+ define('SECURE_AUTH_SALT', 'Bv8Vh^w8hn [|-;J9`CqiwKCq,y#V?I|Oe*-iJRr(q>vA.%nOT=0(gY*?i0GOwe6');
+ define('LOGGED_IN_SALT',   'KFoV7.TpS%=z+BlU7OH^<<J?i-YdMlVMkjcK3Kb.*k_[&P5UD+sm]T[<RZ{)Sl;7');
+ define('NONCE_SALT',       'S-:8v9vA4y1{b,}ShHC%)hj-|S@a)+wT|xvN*{rch7/Iotr>>cs-Q{ZV_H>wMKC]');
 
 /**#@-*/
 
@@ -65,7 +63,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'gudgfxzbz1DVDSFiu';
+$table_prefix  = 'ghjvk84hbk1jbhuj9_';
 
 /**
  * For developers: WordPress debugging mode.
