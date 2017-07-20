@@ -1,0 +1,381 @@
+/*
+Theme Name: gabeneri.com
+Theme URI: http://gabeneri.com/
+Description: Portfolio theme for Gabe Neri
+Author: Gabe Neri
+Author URI: http://gabeneri.com/
+Version: 1.0
+Tags: black, white, grey, two-columns, custom-header, custom-background, custom-menu
+
+License: GPLv3
+License URI: license.txt
+*/
+
+/* Copyright 2015 Gabe Neri */
+
+
+/*************************************
+GENERAL
+*************************************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3 {
+    margin: 0 0 1em 0; /* zeros out margins on h3 element, and adds margin to the bottom to sep from text a little more */
+}
+
+p {
+    padding: 5px;
+}
+
+
+
+/*************************************
+HEADING
+*************************************/
+
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}
+
+#logo {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    margin: 15px 0;
+    font-size: 1.75em;
+    font-weight: normal;
+    line-height: 0.8em;
+}
+
+h2 {
+    font-size: 0.75em;
+    margin: -5px 0 0;
+    font-weight: normal;
+}
+
+
+
+/*************************************
+NAVIGATION
+*************************************/
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-weight: 700;
+    padding: 15px 10px;
+}
+
+
+
+/*************************************
+FOOTER
+*************************************/
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+    color: #ccc;
+}
+
+img.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+
+
+/*************************************
+PAGE: PORTFOLIO
+*************************************/
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li {
+    /* img are 45% of PAGE because parent width is not set */
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: #222222;
+    color: #999;
+}
+
+#gallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 0.75em;
+    color: #999;
+}
+
+
+
+/*************************************
+PAGE: ABOUT
+*************************************/
+
+img.profile-pic {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+}
+
+#about p {
+     float: right;
+}
+
+
+
+
+
+
+
+
+/*************************************
+PAGE: RESUME
+*************************************/
+
+#goal {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+/*************************************
+PAGE: CONTACT
+*************************************/
+
+ul.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+ul.contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+ul.contact-info li.mail a {
+    background-image: url('../images/mail.png');
+}
+
+ul.contact-info li.twitter a {
+    background-image: url('../images/twitter.png');
+}
+
+ul.contact-info li.facebook a {
+    background-image: url('../images/facebook.png');
+}
+
+ul.contact-info li.phone a {
+    background-image: url('../images/phone.png');
+}
+
+
+/*************************************
+COLORS
+*************************************/
+
+
+/* site body */
+
+body {
+    background: url(../images/pattern.jpg);
+}
+
+
+/* dark grey header */
+
+header {
+    background: #2A2A2A;
+}
+
+/* headline text */
+
+h1,
+h2,
+h3 {
+    color: darkorange;
+}
+
+/* paragraphs */
+
+p {
+    background: rgba(42, 42, 42, .75);
+    color: lightgray;
+}
+
+/* unordered lists */
+
+ul {
+    background: rgba(42, 42, 42, .75);
+    color: lightgray;
+}
+
+/* contact ul */
+
+#contact {
+    color: #999;
+}
+
+/* links */
+
+a {
+    color: #fff;
+}
+
+
+/* current link selected */
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #999;
+}
+
+
+/* current link hovered */
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    color: darkorange;
+}
+
+@media screen and (min-width: 480px) {
+
+    /*************************************
+    TWO COLUMN LAYOUT
+    *************************************/
+
+    #primary {
+        width: 50%;
+        float: left;
+    }
+
+    #secondary {
+        width: 40%;
+        float: right;
+    }
+
+    /*************************************
+    THE MATH:
+    3 (elments x) * 5% (margin % added up) = 15%
+    100% - 15% = 85%
+    85 / 3 (number of columns) = 28.333333333333%
+    *************************************/
+
+
+
+     /*************************************
+    PAGE: PORTFOLIO
+    *************************************/
+
+    #gallery li {
+	    width: 28.3333%;
+    }
+
+    #gallery li:nth-child(4n) {
+        clear: left;
+    }
+
+
+
+     /*************************************
+    PAGE: ABOUT
+    *************************************/
+
+    .profile-pic {
+        float: left;
+        margin: 0 5% 80px 0;
+    }
+
+}
+
+/* Responsive CSS */
+@media screen and (min-width: 660px) {
+
+    /*************************************
+   HEADER
+    *************************************/
+
+    nav {
+        background: none;
+        float: right;
+        font-size: 1.125em;
+        margin-right: 5%;
+        text-align: right;
+        width: 45%;
+        }
+
+    #logo {
+        float: left;
+        margin-left: 5%;
+        text-align: left;
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 0.825.em;
+        margin-bottom: 20px;
+    }
+
+    header {
+        border-bottom: 5px solid #999;
+        margin-bottom: 60px;
+    }
+}
