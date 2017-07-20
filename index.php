@@ -9,26 +9,11 @@ include_once('header.php');
 ?>
 <!-- Above the Fold -->
 <section id="atf_<?php echo $page; ?>_cta1">
-    <h2>We Equip Events With <span>EVERYTHING!</span></h2>
+    <h2>Experience(XP) Designer, Multimedia Guru</h2>
+    <img class="" src="images/logo.png" alt="Gabe Neri Designer">
 </section>
-<section id="icon-cta">
-    <h2>plan. equip. celebrate.</h2>
-    <div id="icon-wrap">
-        <a href="http://localhost/neri_gabe_equip_events/planning.php">
-            <div class="icon-wrap"><img class="icon icon1" src="images/planning_icon.png" alt="Planning"/>
-                <p>plan</p></div>
-        </a>
-        <a href="http://localhost/neri_gabe_equip_events/products.php">
-            <div class="icon-wrap"><img class="icon icon2" src="images/equipment_icon.png" alt="Equip"/>
-                <p>equip</p></div>
-        </a>
-        <a href="http://localhost/neri_gabe_equip_events/index.php#tmnls">
-            <div class="icon-wrap"><img class="icon icon3" src="images/experience_icon.png" alt="Celebrate"/>
-                <p>celebrate</p></div>
-        </a>
-    </div>
-</section>
-</div>
+
+
 <main id="content" class="cf">
     <!-- Call to Action -->
     <section id="atf-<?php echo $page; ?>-cta2">
@@ -39,7 +24,6 @@ include_once('header.php');
                                                             class="cta-learn"> Learn more.</a></p>
         </div>
     </section>
-
 </main>
 <?php
 //get the footer element and close the open body and html tags
