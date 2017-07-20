@@ -39,74 +39,7 @@ include_once('header.php');
                                                             class="cta-learn"> Learn more.</a></p>
         </div>
     </section>
-    <!-- Affiliates -->
-    <section id="affiliates">
-        <h2>Affiliates</h2>
-        <div id="aff_wrap">
-            <a href="http://promotionaldesigngroup.com">
-                <div class="aff-wrap"><img class="aff aff1" src="images/aff1.jpg" alt="Promotional Design Group"/></div>
-            </a>
-            <a href="http://www.knightscatering.ie">
-                <div class="aff-wrap"><img class="aff aff2" src="images/aff2.jpg" alt="Knights Catering"/></div>
-            </a>
-            <a href="http://elegantaffairscaterers.com">
-                <div class="aff-wrap"><img class="aff aff3" src="images/aff3.jpg"
-                                           alt="Elegant Affairs Catering and Design"/></div>
-            </a>
-        </div>
-    </section>
-    <!-- Testimonials -->
-    <section id="tmnls-wrap">
-        <div id="testimonials" class="tm-cta">
-            <h3>Trusted by Everyone</h3>
-            <p>From Napa Valley to Dubai, Equip Events has set up over 5,000 successful events. When it comes to events,
-                choose a name trusted by so many companies world wide.<a
-                        href="http://localhost/neri_gabe_equip_events/about.php" class="cta-learn"> Learn more.</a></p>
-        </div>
-        <div id="tmnls">
-            <div class="tm tm1">
-                <img src="images/sally.jpg" alt="Jeremy Green"/>
-                <p>Equip Events pulled of what no other company has EVER been able to for us. We truly admire the work
-                    and effectivness of Equip planning.</p>
-                <h4>Jeremy Green, Account Mngt. Oscorp Co.</h4>
-            </div>
-            <div class="tm tm2">
-                <img src="images/jeremy.jpg" alt="Jeremy Green"/>
-                <p>Equip Events pulled of what no other company has EVER been able to for us. We truly admire the work
-                    and effectivness of Equip planning.</p>
-                <h4>Jeremy Green, Account Mngt. Oscorp Co.</h4>
-            </div>
-            <div class="tm tm3">
-                <img src="images/ted.jpg" alt="Jeremy Green"/>
-                <p>Equip Events pulled of what no other company has EVER been able to for us. We truly admire the work
-                    and effectivness of Equip planning.</p>
-                <h4>Jeremy Green, Account Mngt. Oscorp Co.</h4>
-            </div>
-            <div class="tm tm4">
-                <img src="images/kita.jpg" alt="Jeremy Green"/>
-                <p>Equip Events pulled of what no other company has EVER been able to for us. We truly admire the work
-                    and effectivness of Equip planning.</p>
-                <h4>Jeremy Green, Account Mngt. Oscorp Co.</h4>
-            </div>
-            <div class="tm tm5">
-                <img src="images/mary.jpg" alt="Jeremy Green"/>
-                <p>Equip Events pulled of what no other company has EVER been able to for us. We truly admire the work
-                    and effectivness of Equip planning.</p>
-                <h4>Jeremy Green, Account Mngt. Oscorp Co.</h4>
-            </div>
-            <div class="tm tm6">
-                <img src="images/doug.jpg" alt="sally"/>
-                <p>Equip Events pulled of what no other company has EVER been able to for us. We truly admire the work
-                    and effectivness of Equip planning.</p>
-                <h4>Jeremy Green, Account Mngt. Oscorp Co.</h4>
-            </div>
-        </div>
-    </section>
-    <!-- Ad Space -->
-    <div class="ad">
-        <a href="http://plattonline.com/webcampaign/howerton/index.php" title="Howerton" target="_blank" rel="noopener"><img
-                    src="images/howerton_ad.jpg" alt="Howerton"/></a>
-    </div>
+
 </main>
 <?php
 //get the footer element and close the open body and html tags

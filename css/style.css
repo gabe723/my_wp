@@ -168,10 +168,6 @@ ul.contact-info li.phone a {
 /*************************************
 COLORS
 *************************************/
-/* site body */
-body {
-  background: url(../images/pattern.jpg); }
-
 /* dark grey header */
 header {
   background: #2A2A2A; }
