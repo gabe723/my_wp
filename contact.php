@@ -8,11 +8,11 @@ include_once('header.php');
 ?>
 </div>
 <main id="content">
-	<!-- Contact -->
-	<section id="<?php echo $page; ?>">
-		<h2>Contact</h2>
-		<p>gneri723@gmail.com</p>
-	</section>
+    <!-- Contact -->
+    <section id="<?php echo $page; ?>">
+        <h2>Contact</h2>
+        <p>gneri723@gmail.com</p>
+    </section>
 </main>
 <?php
 //get the footer element and close the open body and html tags

@@ -8,16 +8,16 @@ include_once('header.php');
 ?>
 </div>
 <main id="content">
-	<!-- Call to Action -->
-	<section id="atf-<?php echo $page; ?>-cta1">
-		<div class="cta">
-			<h1>404.</h1>
-			<h3>Oops it looks like that's missing.</h3>
-			<p>Go ahead and dive back in <a href="http://www.gabeneri.com/"><em><strong>HERE.</strong></em></p>
-			</div>
-		</section>
-	</main>
-	<?php
-	//get the footer element and close the open body and html tags
-	include_once('footer.php');
-	?>
+    <!-- Call to Action -->
+    <section id="atf-<?php echo $page; ?>-cta1">
+        <div class="cta">
+            <h1>404.</h1>
+            <h3>Oops it looks like that's missing.</h3>
+            <p>Go ahead and dive back in <a href="http://www.gabeneri.com/"><em><strong>HERE.</strong></em></p>
+        </div>
+    </section>
+</main>
+<?php
+//get the footer element and close the open body and html tags
+include_once('footer.php');
+?>
