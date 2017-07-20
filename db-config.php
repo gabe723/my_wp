@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$username = 'gn_equip_events';
-$password = 'XzsHbZz9hp0eaiVo';
-$database = 'gabe_equip_events';
+$username = 'gn_portfolio';
+$password = 'qYVsKSc8jyPybeXv';
+$database = 'gabe_portfolio';
 //connect to database
 $db = new mysqli( $host, $username, $password, $database );
 //if there was a problem connecting, kill the page
