@@ -17,10 +17,9 @@ include_once('header.php');
     <!-- About -->
     <section id="<?php echo $page; ?>">
         <div class="<?php echo $page; ?>-wrap">
-            <h2>about</h2>
-            <h3>the journey here</h3>
-            <p>What started out as a few friends putting on parties has evolved into a widespread bussiness of creating
-                the best event experience money can buy.</p>
+            <h2>Who am I?</h2>
+            <h3>I'm a UX/UI Web, Graphic, and Multimedia BAMF<</h3>
+            <p>I design experiences. I've always been interested in how things work. In how we as humans interact with our enviorment. This curiosity mixed with my love for technology has propelled me in the direction of experience design. I'm in love and there's no going back. I'm dedicated to what I do and will work with whatever I have to make the best expereince possible for the user. When I'm not coding or designing I can usually be found getting lost(on purpose) on my Harley. Life is good.</p>
         </div>
     </section>
 </main>

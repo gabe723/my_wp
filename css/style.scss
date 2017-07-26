@@ -16,9 +16,67 @@ License URI: license.txt
 /*************************************
 GENERAL
 *************************************/
+//colors:
+$accent1: rgba( 120, 120, 120, 0.8 );
+$accent2:rgba( 90, 117, 173, 0.8 );
+$accent3: rgba( 246, 246, 246, 0.5 );
+$accent4: rgba( 229, 229, 229, 0.5 );
+$logo_accent1: #A57FFF;
+$logo_accent2: #9E71FF;
+$grey: rgba( 229, 229, 229, 0.5 );
+$header: rgba( 255, 255, 255, 0.8 );
+$utility_nav: rgba( 67, 77, 85, 0.5 );
+$search_field: rgba( 0, 255, 255, 0.5 );
+$footer: #434d55;
+$a: #4BCAFF;
+$borders: #3e69ac;
 
-body {
-  font-family: 'Roboto', sans-serif;
+
+html{
+  box-sizing: border-box;
+}
+html > *{
+  box-sizing: inherit;
+}
+/* apply a natural box layout model to all elements */
+*,
+*::before,
+*::after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li, /* ul default needed to be reset */
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, main, menu, nav, section, summary,
+time, mark, audio, video{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+.cf:after{
+  content: " ";
+  display: block;
+  clear: both;
+}
+body{
+  font-size: 100%;
+  min-width: 320px;
+  height: auto;
+  font-family: 'Lato',  Verdana, sans-serif;
+  color: #000;
+}
+.hero{
+  background: url(../images/atf_index_tent.jpg) center no-repeat;
+  background-size: cover;
+  height: 300px;
 }
 
 #wrapper {
