@@ -59,13 +59,8 @@ body {
   font-family: 'Lato',  Verdana, sans-serif;
   color: #000; }
 
-.hero {
-  background: url(../images/atf_index_tent.jpg) center no-repeat;
-  background-size: cover;
-  height: 300px; }
-
-#wrapper {
-  max-width: 940px;
+.site-container {
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 5%; }
 
@@ -79,17 +74,34 @@ h3 {
   margin: 0 0 1em 0;
   /* zeros out margins on h3 element, and adds margin to the bottom to sep from text a little more */ }
 
-p {
-  padding: 5px; }
+/* Social Icons */
+#social {
+  width: 100%;
+  height: auto;
+  margin-top: 8%; }
+
+#social img {
+  margin: 2%;
+  float: left;
+  width: 10%;
+  height: auto; }
 
 /*************************************
 HEADING
 *************************************/
 header {
+  height: auto;
+  width: auto;
   float: left;
   margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
-  width: 100%; }
+  padding: 5px 0 0 0; }
+
+#logo_wrap {
+  background: transparent url("../images/logo.png") no-repeat scroll 0 0/contain;
+  float: left;
+  margin: 3% 4% 0;
+  width: 50%;
+  text-indent: -99999px; }
 
 #logo {
   text-align: center;
@@ -107,9 +119,81 @@ h2 {
   margin: -5px 0 0;
   font-weight: normal; }
 
+span.menu {
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: capitalize;
+  float: left;
+  margin-left: 15%;
+  width: 13%;
+  margin-top: 2.5%; }
+
+.menu-btn {
+  width: 10%;
+  height: auto;
+  float: right;
+  margin: 2% 2%; }
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: black;
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-y: hidden;
+  /* Disable verical scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 10%;
+  /* 30px or a 10% top margin to avoid conflict with the close button on smaller screens */ }
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 2.5%;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */ }
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1; }
+
+/* Position the close button (top right corner) */
+.overlay .close-btn {
+  position: absolute;
+  top: -2%;
+  right: 1%;
+  font-size: 3em; }
+
 /*************************************
 NAVIGATION
 *************************************/
+.global-nav-wrap {
+  display: none; }
+
 nav {
   text-align: center;
   padding: 10px 0;

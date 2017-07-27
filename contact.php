@@ -11,7 +11,7 @@ include_once('header.php');
     <!-- Contact -->
     <section id="<?php echo $page; ?>">
         <h2>Contact</h2>
-        <p>gneri723@gmail.com</p>
+        <p>gabe @ gabeneri dot com</p>
     </section>
 </main>
 <?php

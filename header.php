@@ -22,7 +22,6 @@ security_check();
 </head>
 <body id="page-<?php echo $page; ?>" role="content" class="template-<?php echo $page; ?> header-menu-open">
 <div class="site-container">
-    <div class="hero hero-<?php echo $page; ?>">
         <div class="header-wrap">
             <header id="page_header" class="header logged-in-header" role="header">
                 <a href="http://localhost/neri_gabe_equip_events/index.php" class="equip-events" title="Equip Events">
@@ -32,8 +31,6 @@ security_check();
                 </a>
                 <?php
                 if (defined('USER_ID')) {
-                    include_once('global-nav.php');
-                } else {
                     include_once('global-nav.php');
                 }
                 ?>
