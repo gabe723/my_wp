@@ -264,12 +264,6 @@ ul.contact-info li.phone a {
 COLORS
 *************************************/
 
-/* dark grey header */
-
-header {
-  background: #2A2A2A;
-}
-
 /* headline text */
 
 h1,
@@ -281,14 +275,12 @@ h3 {
 /* paragraphs */
 
 p {
-  background: rgba(42, 42, 42, .75);
-  color: lightgray;
+  color: black;
 }
 
 /* unordered lists */
 
 ul {
-  background: rgba(42, 42, 42, .75);
   color: lightgray;
 }
 
@@ -398,7 +390,6 @@ nav ul li a:active {
   }
 
   header {
-    border-bottom: 5px solid #999;
     margin-bottom: 60px;
   }
 }

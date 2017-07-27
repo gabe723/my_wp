@@ -32,8 +32,7 @@ security_check();
                 </a>
                 <?php
                 if (defined('USER_ID')) {
-                    include_once('logged-in-utility-nav.php');
-                    include_once('logged-in-global-nav.php');
+                    include_once('global-nav.php');
                 } else {
                     include_once('global-nav.php');
                 }

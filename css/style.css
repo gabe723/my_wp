@@ -215,10 +215,6 @@ ul.contact-info li.phone a {
 /*************************************
 COLORS
 *************************************/
-/* dark grey header */
-header {
-  background: #2A2A2A; }
-
 /* headline text */
 h1,
 h2,
@@ -227,12 +223,10 @@ h3 {
 
 /* paragraphs */
 p {
-  background: rgba(42, 42, 42, 0.75);
-  color: lightgray; }
+  color: black; }
 
 /* unordered lists */
 ul {
-  background: rgba(42, 42, 42, 0.75);
   color: lightgray; }
 
 /* contact ul */
@@ -314,7 +308,6 @@ HEADER
     margin-bottom: 20px; }
 
   header {
-    border-bottom: 5px solid #999;
     margin-bottom: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
