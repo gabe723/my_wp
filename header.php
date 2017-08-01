@@ -13,7 +13,6 @@ security_check();
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400"/>
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
     <link rel="alternate" type="application/rss+xml" href="rss.php">
     <link rel="icon" type="image/png" href="images/favicon.ico"/>
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -22,22 +21,19 @@ security_check();
 </head>
 <body id="page-<?php echo $page; ?>" role="content" class="template-<?php echo $page; ?> header-menu-open">
 <div class="site-container">
-        <div class="header-wrap">
-            <header id="page_header" class="header logged-in-header" role="header">
-                <a href="http://localhost/neri_gabe_equip_events/index.php" class="equip-events" title="Equip Events">
-                    <div id="logo_wrap">
-                        <h1>gabeneri.com</h1>
-                    </div>
-                </a>
-                <?php
-                if (defined('USER_ID')) {
-                    include_once('global-nav.php');
-                }
-                ?>
-                <?php include_once('mobile-nav.php'); ?>
-                <a id="menu-btn" href="#" onclick="openNav()"><span class="menu">menu</span><img class="menu-btn"
-                                                                                                 src="images/menu_button.png"
-                                                                                                 alt="Menu"/></a>
-                <div class="cf"></div>
-            </header>
-        </div>
+    <div class="header-wrap">
+        <header id="page_header" class="header logged-in-header" role="header">
+            <a href="http://localhost/neri_gabe_equip_events/index.php" class="equip-events" title="Equip Events">
+                <div id="logo_wrap">
+                    <h1>gabeneri.com</h1>
+                </div>
+            </a>
+            <?php
+            if (defined('USER_ID')) {
+                include_once('global-nav.php');
+            }
+            ?>
+
+            <div class="cf"></div>
+        </header>
+    </div>

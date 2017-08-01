@@ -10,7 +10,28 @@ Tags: black, white, grey, two-columns, custom-header, custom-background, custom-
 License: GPLv3
 License URI: license.txt
 */
-/* Copyright 2015 Gabe Neri */
+/* Copyright 2017 Gabe Neri */
+/*************************************
+COLORS
+*************************************/
+/* headline text */
+h1,
+h2,
+h3 {
+  color: darkorange; }
+
+/* paragraphs */
+p {
+  color: black; }
+
+/* unordered lists */
+ul {
+  color: lightgray; }
+
+/* links */
+a {
+  color: #fff; }
+
 /*************************************
 GENERAL
 *************************************/
@@ -56,11 +77,11 @@ body {
   font-size: 100%;
   min-width: 320px;
   height: auto;
-  font-family: 'Lato',  Verdana, sans-serif;
+  font-family: 'Lato', Verdana, sans-serif;
   color: #000; }
 
 .site-container {
-  max-width: 960px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 5%; }
 
@@ -73,18 +94,6 @@ img {
 h3 {
   margin: 0 0 1em 0;
   /* zeros out margins on h3 element, and adds margin to the bottom to sep from text a little more */ }
-
-/* Social Icons */
-#social {
-  width: 100%;
-  height: auto;
-  margin-top: 8%; }
-
-#social img {
-  margin: 2%;
-  float: left;
-  width: 10%;
-  height: auto; }
 
 /*************************************
 HEADING
@@ -103,10 +112,6 @@ header {
   width: 50%;
   text-indent: -99999px; }
 
-#logo {
-  text-align: center;
-  margin: 0; }
-
 h1 {
   font-family: 'Syncopate', sans-serif;
   margin: 15px 0;
@@ -119,97 +124,13 @@ h2 {
   margin: -5px 0 0;
   font-weight: normal; }
 
-span.menu {
-  color: rgba(255, 255, 255, 0.3);
-  text-transform: capitalize;
-  float: left;
-  margin-left: 15%;
-  width: 13%;
-  margin-top: 2.5%; }
-
-.menu-btn {
-  width: 10%;
-  height: auto;
-  float: right;
-  margin: 2% 2%; }
-
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 0;
-  width: 100%;
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: black;
-  /* Black fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/opacity */
-  overflow-y: hidden;
-  /* Disable verical scroll */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 25%;
-  /* 25% from the top */
-  width: 100%;
-  /* 100% width */
-  text-align: center;
-  /* Centered text/links */
-  margin-top: 10%;
-  /* 30px or a 10% top margin to avoid conflict with the close button on smaller screens */ }
-
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 2.5%;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: capitalize;
-  color: #818181;
-  display: block;
-  /* Display block instead of inline */
-  transition: 0.3s;
-  /* Transition effects on hover (color) */ }
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1; }
-
-/* Position the close button (top right corner) */
-.overlay .close-btn {
-  position: absolute;
-  top: -2%;
-  right: 1%;
-  font-size: 3em; }
-
 /*************************************
 NAVIGATION
 *************************************/
-.global-nav-wrap {
-  display: none; }
-
 nav {
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 0; }
-
-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0; }
-
-nav li {
-  display: inline-block; }
-
-nav a {
-  font-weight: 700;
-  padding: 15px 10px; }
 
 /*************************************
 FOOTER
@@ -221,150 +142,6 @@ footer {
   padding-top: 50px;
   color: #ccc; }
 
-img.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px; }
-
-/*************************************
-PAGE: PORTFOLIO
-*************************************/
-#gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-#gallery li {
-  /* img are 45% of PAGE because parent width is not set */
-  float: left;
-  width: 45%;
-  margin: 2.5%;
-  background-color: #222222;
-  color: #999; }
-
-#gallery li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #999; }
-
-/*************************************
-PAGE: ABOUT
-*************************************/
-img.profile-pic {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto 30px;
-  border-radius: 100%; }
-
-#about p {
-  float: right; }
-
-/*************************************
-PAGE: RESUME
-*************************************/
-#goal {
-  text-align: center;
-  margin-bottom: 50px; }
-
-/*************************************
-PAGE: CONTACT
-*************************************/
-ul.contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0.9em; }
-
-ul.contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px; }
-
-ul.contact-info li.mail a {
-  background-image: url("../images/mail.png"); }
-
-ul.contact-info li.twitter a {
-  background-image: url("../images/twitter.png"); }
-
-ul.contact-info li.facebook a {
-  background-image: url("../images/facebook.png"); }
-
-ul.contact-info li.phone a {
-  background-image: url("../images/phone.png"); }
-
-/*************************************
-COLORS
-*************************************/
-/* headline text */
-h1,
-h2,
-h3 {
-  color: darkorange; }
-
-/* paragraphs */
-p {
-  color: black; }
-
-/* unordered lists */
-ul {
-  color: lightgray; }
-
-/* contact ul */
-#contact {
-  color: #999; }
-
-/* links */
-a {
-  color: #fff; }
-
-/* current link selected */
-nav ul li a:link,
-nav ul li a:visited {
-  color: #999; }
-
-/* current link hovered */
-nav ul li a:hover,
-nav ul li a:focus,
-nav ul li a:active {
-  color: darkorange; }
-
-@media screen and (min-width: 480px) {
-  /*************************************
-  TWO COLUMN LAYOUT
-  *************************************/
-  #primary {
-    width: 50%;
-    float: left; }
-
-  #secondary {
-    width: 40%;
-    float: right; }
-
-  /*************************************
-  THE MATH:
-  3 (elments x) * 5% (margin % added up) = 15%
-  100% - 15% = 85%
-  85 / 3 (number of columns) = 28.333333333333%
-  *************************************/
- /*************************************
-PAGE: PORTFOLIO
-*************************************/
-  #gallery li {
-    width: 28.3333%; }
-
-  #gallery li:nth-child(4n) {
-    clear: left; }
-
- /*************************************
-PAGE: ABOUT
-*************************************/
-  .profile-pic {
-    float: left;
-    margin: 0 5% 80px 0; } }
 /* Responsive CSS */
 @media screen and (min-width: 660px) {
  /*************************************
@@ -376,12 +153,6 @@ HEADER
     font-size: 1.125em;
     margin-right: 5%;
     text-align: right;
-    width: 45%; }
-
-  #logo {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
     width: 45%; }
 
   h1 {

@@ -9,9 +9,12 @@ include_once('header.php');
 ?>
 <main id="content" class="cf">
     <section id="atf_<?php echo $page; ?>_cta1">
-        <img class="a"src="images/logo.png" alt="Gabe Neri Designer">
+        <img class="a" src="images/logo.png" alt="Gabe Neri Designer">
         <p>My name is Gabe and I'm a UX/UI, Web, Graphic, and Multimedia designer.</p>
-        <a href="work.php" alt="work" target="_blank" rel="no-opener"><div class="cta-button">View Work<div></a>
+        <a href="work.php" alt="work" target="_blank" rel="no-opener">
+            <div class="cta-button">View Work
+                <div>
+        </a>
     </section>
 </main>
 

@@ -11,340 +11,26 @@ License: GPLv3
 License URI: license.txt
 */
 
-/* Copyright 2015 Gabe Neri */
-
-/*************************************
-GENERAL
-*************************************/
-//colors:
-$accent1: rgba( 120, 120, 120, 0.8 );
-$accent2:rgba( 90, 117, 173, 0.8 );
-$accent3: rgba( 246, 246, 246, 0.5 );
-$accent4: rgba( 229, 229, 229, 0.5 );
-$logo_accent1: #A57FFF;
-$logo_accent2: #9E71FF;
-$grey: rgba( 229, 229, 229, 0.5 );
-$header: rgba( 255, 255, 255, 0.8 );
-$utility_nav: rgba( 67, 77, 85, 0.5 );
-$search_field: rgba( 0, 255, 255, 0.5 );
-$footer: #434d55;
-$a: #4BCAFF;
-$borders: #3e69ac;
-
-
-html{
-  box-sizing: border-box;
-}
-html > *{
-  box-sizing: inherit;
-}
-/* apply a natural box layout model to all elements */
-*,
-*::before,
-*::after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i, dl, dt, dd, ol, ul, li, /* ul default needed to be reset */
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, main, menu, nav, section, summary,
-time, mark, audio, video{
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-.cf:after{
-  content: " ";
-  display: block;
-  clear: both;
-}
-body{
-  font-size: 100%;
-  min-width: 320px;
-  height: auto;
-  font-family: 'Lato',  Verdana, sans-serif;
-  color: #000;
-}
-
-.site-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-h3 {
-  margin: 0 0 1em 0; /* zeros out margins on h3 element, and adds margin to the bottom to sep from text a little more */
-}
-
-/* Social Icons */
-
-#social{
-  width: 100%;
-  height: auto;
-  margin-top: 8%;
-}
-#social img{
-  margin: 2%;
-  float: left;
-  width: 10%;
-  height: auto;
-}
-
-/*************************************
-HEADING
-*************************************/
-
-header {
-  height: auto;
-  width: auto;
-  float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
-}
-
-#logo_wrap{
-  background: rgba(0, 0, 0, 0) url("../images/logo.png") no-repeat scroll 0 0 / contain ;
-  float: left;
-  margin: 3% 4% 0;
-  width: 50%;
-  text-indent: -99999px;
-}
-
-#logo {
-  text-align: center;
-  margin: 0;
-}
-
-h1 {
-  font-family: 'Syncopate', sans-serif;
-  margin: 15px 0;
-  font-size: 1.75em;
-  font-weight: normal;
-  line-height: 0.8em;
-}
-
-h2 {
-  font-size: 0.75em;
-  margin: -5px 0 0;
-  font-weight: normal;
-}
-
-span.menu{
-  color: rgba(255, 255, 255, 0.3);
-  text-transform: capitalize;
-  float: left;
-  margin-left: 15%;
-  width: 13%;
-  margin-top: 2.5%;
-}
-
-.menu-btn{
-  width: 10%;
-  height: auto;
-  float: right;
-  margin: 2% 2%;
-}
-
-/* The Overlay (background) */
-.overlay{
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 0;
-  width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-y: hidden; /* Disable verical scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content{
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 10%; /* 30px or a 10% top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a{
-  padding: 2.5%;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: capitalize;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus{
-  color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .close-btn{
-  position: absolute;
-  top: -2%;
-  right: 1%;
-  font-size: 3em;
-}
-
-/*************************************
-NAVIGATION
-*************************************/
-
-.global-nav-wrap{
-  display: none;
-}
-
-nav {
-  text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  font-weight: 700;
-  padding: 15px 10px;
-}
-
-/*************************************
-FOOTER
-*************************************/
-
-footer {
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 50px;
-  color: #ccc;
-}
-
-img.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-}
-
-/*************************************
-PAGE: PORTFOLIO
-*************************************/
-
-#gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#gallery li {
-  /* img are 45% of PAGE because parent width is not set */
-  float: left;
-  width: 45%;
-  margin: 2.5%;
-  background-color: #222222;
-  color: #999;
-}
-
-#gallery li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #999;
-}
-
-/*************************************
-PAGE: ABOUT
-*************************************/
-
-img.profile-pic {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto 30px;
-  border-radius: 100%;
-}
-
-#about p {
-  float: right;
-}
-
-/*************************************
-PAGE: RESUME
-*************************************/
-
-#goal {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-/*************************************
-PAGE: CONTACT
-*************************************/
-
-ul.contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0.9em;
-}
-
-ul.contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
-}
-
-ul.contact-info li.mail a {
-  background-image: url('../images/mail.png');
-}
-
-ul.contact-info li.twitter a {
-  background-image: url('../images/twitter.png');
-}
-
-ul.contact-info li.facebook a {
-  background-image: url('../images/facebook.png');
-}
-
-ul.contact-info li.phone a {
-  background-image: url('../images/phone.png');
-}
+/* Copyright 2017 Gabe Neri */
 
 /*************************************
 COLORS
 *************************************/
+
+//colors:
+$accent1: rgba(120, 120, 120, 0.8);
+$accent2: rgba(90, 117, 173, 0.8);
+$accent3: rgba(246, 246, 246, 0.5);
+$accent4: rgba(229, 229, 229, 0.5);
+$logo_accent1: #A57FFF;
+$logo_accent2: #9E71FF;
+$grey: rgba(229, 229, 229, 0.5);
+$header: rgba(255, 255, 255, 0.8);
+$utility_nav: rgba(67, 77, 85, 0.5);
+$search_field: rgba(0, 255, 255, 0.5);
+$footer: #434d55;
+$a: #4BCAFF;
+$borders: #3e69ac;
 
 /* headline text */
 
@@ -366,99 +52,157 @@ ul {
   color: lightgray;
 }
 
-/* contact ul */
-
-#contact {
-  color: #999;
-}
-
 /* links */
 
 a {
   color: #fff;
 }
 
-/* current link selected */
+/*************************************
+GENERAL
+*************************************/
 
-nav ul li a:link,
-nav ul li a:visited {
-  color: #999;
+html {
+  box-sizing: border-box;
 }
 
-/* current link hovered */
-
-nav ul li a:hover,
-nav ul li a:focus,
-nav ul li a:active {
-  color: darkorange;
+html > * {
+  box-sizing: inherit;
 }
 
-@media screen and (min-width: 480px) {
+/* apply a natural box layout model to all elements */
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-  /*************************************
-  TWO COLUMN LAYOUT
-  *************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li, /* ul default needed to be reset */
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, main, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
-  #primary {
-    width: 50%;
-    float: left;
-  }
+.cf:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
 
-  #secondary {
-    width: 40%;
-    float: right;
-  }
+body {
+  font-size: 100%;
+  min-width: 320px;
+  height: auto;
+  font-family: 'Lato', Verdana, sans-serif;
+  color: #000;
+}
 
-  /*************************************
-  THE MATH:
-  3 (elments x) * 5% (margin % added up) = 15%
-  100% - 15% = 85%
-  85 / 3 (number of columns) = 28.333333333333%
-  *************************************/
+.site-container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
 
-  /*************************************
- PAGE: PORTFOLIO
- *************************************/
+a {
+  text-decoration: none;
+}
 
-  #gallery li {
-    width: 28.3333%;
-  }
+img {
+  max-width: 100%;
+}
 
-  #gallery li:nth-child(4n) {
-    clear: left;
-  }
+h3 {
+  margin: 0 0 1em 0; /* zeros out margins on h3 element, and adds margin to the bottom to sep from text a little more */
+}
 
-  /*************************************
- PAGE: ABOUT
- *************************************/
+/*************************************
+HEADING
+*************************************/
 
-  .profile-pic {
-    float: left;
-    margin: 0 5% 80px 0;
-  }
+header {
+  height: auto;
+  width: auto;
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+}
 
+#logo_wrap {
+  background: rgba(0, 0, 0, 0) url("../images/logo.png") no-repeat scroll 0 0 / contain;
+  float: left;
+  margin: 3% 4% 0;
+  width: 50%;
+  text-indent: -99999px;
+}
+
+h1 {
+  font-family: 'Syncopate', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+/*************************************
+NAVIGATION
+*************************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+/*************************************
+FOOTER
+*************************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
 }
 
 /* Responsive CSS */
+@media screen and (min-width: 480px) {
+
+}
+
 @media screen and (min-width: 660px) {
 
   /*************************************
  HEADER
   *************************************/
-
   nav {
     background: none;
     float: right;
     font-size: 1.125em;
     margin-right: 5%;
     text-align: right;
-    width: 45%;
-  }
-
-  #logo {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
     width: 45%;
   }
 
