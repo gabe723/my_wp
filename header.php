@@ -8,13 +8,12 @@ security_check();
     <!-- makes sure content does not shrink in mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title><?php dynamic_title($page); ?></title>
-    <link rel="stylesheet" type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400"/>
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="alternate" type="application/rss+xml" href="rss.php">
-    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.validate_t.js"></script>
     <script src="js/validTests.js"></script>
@@ -22,13 +21,7 @@ security_check();
 <body id="page-<?php echo $page; ?>" role="content" class="template-<?php echo $page; ?> header-menu-open">
 <div class="site-container">
     <div class="header-wrap">
-        <header id="page_header" class="header logged-in-header" role="header">
-            <a href="http://localhost/neri_gabe_equip_events/index.php" class="equip-events" title="Equip Events">
-                <div id="logo_wrap">
-                    <h1>gabeneri.com</h1>
-                </div>
-            </a>
+        <header id="header" class="header" role="header">
             <?php include_once('global-nav.php'); ?>
-            <div class="cf"></div>
         </header>
     </div>

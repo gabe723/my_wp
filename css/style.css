@@ -18,7 +18,10 @@ ul {
 
 /* links */
 a {
-  color: #fff; }
+  color: darkorange; }
+
+a:hover {
+  color: darkgoldenrod; }
 
 /*************************************
 GENERAL
@@ -79,9 +82,21 @@ a {
 img {
   max-width: 100%; }
 
+h2 {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 10% 0 10% 0; }
+
 h3 {
   margin: 0 0 1em 0;
   /* zeros out margins on h3 element, and adds margin to the bottom to sep from text a little more */ }
+
+.intro {
+  text-align: center;
+  font-size: 1.5em; }
+
+p {
+  margin-top: 5%; }
 
 /*************************************
 HEADING
@@ -93,24 +108,19 @@ header {
   margin: 0 0 30px 0;
   padding: 5px 0 0 0; }
 
-#logo_wrap {
-  background: transparent url("../images/logo.png") no-repeat scroll 0 0/contain;
-  float: left;
-  margin: 3% 4% 0;
-  width: 50%;
-  text-indent: -99999px; }
-
 h1 {
+  display: inline-block;
+  position: relative;
+  margin-top: 9%;
   font-family: 'Syncopate', sans-serif;
-  margin: 15px 0;
   font-size: 1.75em;
   font-weight: normal;
-  line-height: 0.8em; }
+  line-height: 0.8em;
+  text-indent: -99999999px; }
 
-h2 {
-  font-size: 0.75em;
-  margin: -5px 0 0;
-  font-weight: normal; }
+.logo {
+  width: 15%;
+  height: auto; }
 
 /*************************************
 NAVIGATION
