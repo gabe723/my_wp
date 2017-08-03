@@ -12,4 +12,7 @@ include_once('header.php');
         <div class="container">WORK GOES HERE</div>
     </section>
 </main>
-
+<?php
+//get the footer element and close the open body and html tags
+include_once('footer.php');
+?>

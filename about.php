@@ -12,7 +12,6 @@ include_once('header.php');
         <h2>the leader in event planning</h2>
     </div>
 </section>
-</div>
 <main id="content">
     <!-- About -->
     <section id="<?php echo $page; ?>">

@@ -28,12 +28,7 @@ security_check();
                     <h1>gabeneri.com</h1>
                 </div>
             </a>
-            <?php
-            if (defined('USER_ID')) {
-                include_once('global-nav.php');
-            }
-            ?>
-
+            <?php include_once('global-nav.php'); ?>
             <div class="cf"></div>
         </header>
     </div>
