@@ -11,7 +11,7 @@ include_once('header.php');
     <section id="atf_<?php echo $page; ?>_cta1">
         <img class="a" src="images/logo.png" alt="Gabe Neri Designer">
         <p class="intro">I'm Gabe and I'm a UX Web, Graphic, and Multimedia designer.</p>
-        <a href="http://localhost/neri_gabe_portfolio/index#work.php" target="_blank" rel="no-opener">
+        <a href="http://localhost/neri_gabe_portfolio/#work" target="_blank" rel="no-opener">
             <div class="cta-button">View Work
                 <div>
         </a>

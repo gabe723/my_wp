@@ -65,6 +65,7 @@ time, mark, audio, video {
   clear: both; }
 
 body {
+  margin: 0;
   font-size: 100%;
   min-width: 320px;
   height: auto;
@@ -108,27 +109,30 @@ header {
   margin: 0 0 30px 0;
   padding: 5px 0 0 0; }
 
-h1 {
-  display: inline-block;
-  position: relative;
-  margin-top: 9%;
-  font-family: 'Syncopate', sans-serif;
-  font-size: 1.75em;
-  font-weight: normal;
-  line-height: 0.8em;
-  text-indent: -99999999px; }
-
-.logo {
-  width: 15%;
-  height: auto; }
-
 /*************************************
 NAVIGATION
 *************************************/
+.global-nav-wrap, .footer-nav-wrap {
+  height: auto;
+  min-height: 50px;
+  border-bottom: 1px solid #888888; }
+
+.logo {
+  width: 15%;
+  height: auto;
+  float: left; }
+
 nav {
+  width: 85%;
   text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0; }
+  height: auto;
+  float: right;
+  font-size: 1.2em;
+  padding-top: 2.5%; }
+
+li {
+  display: inline;
+  padding-right: 3%; }
 
 /*************************************
 FOOTER
