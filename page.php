@@ -1,5 +1,5 @@
 <?php
-$page = 'index';
+$page = 'page';
 require('db-config.php');
 //use _once on function definitions to prevent duplicates
 include_once('functions.php');
@@ -37,7 +37,8 @@ include_once('header.php');
             <h2>I'm Ready to Get <a href="https://www.youtube.com/watch?v=4ctK1aoWuqY" target="_blank" rel="noopener">SCHWIFTY!</a>
             </h2>
             <p>I could always use some more money so if you're the *BURRP* type who likes getting what they pay for
-                then beam me up Scotty! Just *BUURRRRP* email me at the address right chia: <strong><em><?php echo hide_email('gabe@gabeneri.com'); ?></em></strong>. I'll be sure to fix you right up.</p>
+                then beam me up Scotty! Just *BUURRRRP* email me at the address right chia: <strong><em>gabe @ gabeneri
+                        com</em></strong>. I'll be sure to fix you right up.</p>
         </div>
     </section>
 </main>
