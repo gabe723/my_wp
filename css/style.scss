@@ -44,12 +44,13 @@ ul {
 a {
   color: darkorange;
 }
-a:hover{
+
+a:hover {
   color: darkgoldenrod;
 }
 
 /*************************************
-GENERAL
+LAYOUT
 *************************************/
 
 html {
@@ -96,19 +97,73 @@ time, mark, audio, video {
 }
 
 body {
+  padding: 0;
   margin: 0;
   font-size: 100%;
   min-width: 320px;
-  height: auto;
   font-family: 'Lato', Verdana, sans-serif;
-  color: #000;
 }
 
+/**
+ * Define the space for each grid item by declaring the grid
+ * on the grid container.
+ */
 .site-container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 0 5%;
+  /**
+   * Two columns:
+   *  1. the first sized to content,
+   *  2. the second receives the remaining space
+   *     (but is never smaller than the minimum size of the board
+   *     or the game controls, which occupy this column [Figure 4])
+   *
+   * Three rows:
+   *  3. the first sized to content,
+   *  4. the middle row receives the remaining space
+   *     (but is never smaller than the minimum height
+   *      of the board or stats areas)
+   *  5. the last sized to content.
+   */
+  display: grid;
+  grid-template-columns: auto /* 1 */
+  1fr; /* 2 */
+  grid-template-rows: auto /* 3 */
+  1fr /* 4 */
+  auto; /* 5 */
 }
+
+/* Specify the position of each grid item using coordinates on
+ * the 'grid-row' and 'grid-column' properties of each grid item.
+ */
+.header {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.intro {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.about {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+}
+
+.work {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.contact {
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: center;
+}
+
+/*************************************
+GENERAL
+*************************************/
 
 a {
   text-decoration: none;
@@ -138,25 +193,15 @@ p {
 }
 
 /*************************************
-HEADING
-*************************************/
-
-header {
-  height: auto;
-  width: auto;
-  float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
-}
-
-/*************************************
 NAVIGATION
 *************************************/
+
 .global-nav-wrap, .footer-nav-wrap {
   height: auto;
   min-height: 50px;
   border-bottom: 1px solid #888888;
 }
+
 .logo {
   width: 15%;
   height: auto;
@@ -176,6 +221,7 @@ li {
   display: inline;
   padding-right: 3%;
 }
+
 /*************************************
 FOOTER
 *************************************/
@@ -198,6 +244,15 @@ footer {
   /*************************************
  HEADER
   *************************************/
+
+  //header {
+  //  height: auto;
+  //  width: auto;
+  //  float: left;
+  //  margin: 0 0 30px 0;
+  //  padding: 5px 0 0 0;
+  //}
+
   nav {
     background: none;
     float: right;

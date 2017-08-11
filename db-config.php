@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
 $username = 'gn_portfolio';
-$password = 'qYVsKSc8jyPybeXv';
+$password = 'qdwjKwXy5kFe2Ks8';
 $database = 'gabe_portfolio';
 //connect to database
 $db = new mysqli($host, $username, $password, $database);
@@ -14,8 +14,8 @@ error_reporting(E_ALL & ~E_NOTICE);
 /***CONFIDENTIAL global salt for making our passwords stronger.CONFIDENTIAL***/
 define('SALT', 'ohsdoh!&*fodhfodjqwpjkojlpo1-o-ok1o-k-lkaplp;;ajlnlqiio');
 /***ROOT URL Constant***/
-define('ROOT_URL', 'http://localhost/neri_gabe_equip_events');
+define('ROOT_URL', 'http://localhost/neri_gabe_portfolio');
 /***ROOT PATH Constant***/
-define('ROOT_PATH', 'C:\xampp\htdocs\neri_gabe_equip_events');
+define('ROOT_PATH', 'C:\xampp\htdocs\neri_gabe_portfolio');
 //open session on each page and maintain it
 session_start();
