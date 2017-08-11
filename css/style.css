@@ -59,11 +59,6 @@ time, mark, audio, video {
   vertical-align: baseline;
   background: transparent; }
 
-.cf:after {
-  content: " ";
-  display: block;
-  clear: both; }
-
 body {
   padding: 0;
   margin: 0;
@@ -156,14 +151,12 @@ NAVIGATION
 
 .logo {
   width: 15%;
-  height: auto;
-  float: left; }
+  height: auto; }
 
 nav {
   width: 85%;
   text-align: center;
   height: auto;
-  float: right;
   font-size: 1.2em;
   padding-top: 2.5%; }
 
@@ -177,7 +170,6 @@ FOOTER
 footer {
   font-size: 0.75em;
   text-align: center;
-  clear: both;
   padding-top: 50px;
   color: #ccc; }
 
@@ -188,7 +180,6 @@ HEADER
  *************************************/
   nav {
     background: none;
-    float: right;
     font-size: 1.125em;
     margin-right: 5%;
     text-align: right;
